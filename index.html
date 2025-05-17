@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Sorria :)</title>
+  <style>
+    body {
+      margin: 0;
+      padding: 0;
+      background-color: #ffc0cb; /* fundo rosa */
+      font-family: 'Arial', sans-serif;
+      color: #4b004b;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      min-height: 100vh;
+      text-align: center;
+    }
+    h1 {
+      font-size: 2.5rem;
+      margin: 20px;
+    }
+    .decor {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 20px;
+      margin: 20px;
+    }
+    .decor-item {
+      width: 150px;
+      height: 220px;
+      border-radius: 12px;
+      box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+      overflow: hidden;
+      cursor: pointer;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+    .decor-item img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+    footer {
+      margin-top: 40px;
+      font-size: 1.2rem;
+      font-style: italic;
+    }
+  </style>
+  <script>
+    function pedirSenha() {
+      const senha = prompt("Dia do nosso primeiro encontro");
+      if (senha === "11") {
+        window.open("https://www.youtube.com/watch?v=A_BLO50bRig", "_blank");
+      } else if (senha !== null) {
+        alert("Senha incorreta!");
+      }
+    }
+
+    function mostrarMensagem() {
+      alert("Não vi ainda mas espero um dia vermos junto");
+      window.open("https://www.youtube.com/watch?v=zgaZoMswQG4", "_blank");
+    }
+  </script>
+</head>
+<body>
+  <h1>Espero que você sorria com isso</h1>
+
+  <div class="decor">
+    <a href="https://br.pinterest.com/pin/447545281732941309/" target="_blank" class="decor-item">
+      <img src="https://upload.wikimedia.org/wikipedia/commons/7/74/Tarot_card_The_Star.jpg" alt="???">
+    </a>
+    <a href="https://x.com/ekaat01/status/1923773255480979654" target="_blank" class="decor-item">
+      <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/b/b4/Caryocar_brasiliense.jpg/800px-Caryocar_brasiliense.jpg" alt="???">
+    </a>
+    <div class="decor-item" onclick="pedirSenha()">
+      <img src="https://upload.wikimedia.org/wikipedia/commons/6/61/Heliconia_rostrata.jpg" alt="???">
+    </div>
+    <div class="decor-item" onclick="mostrarMensagem()">
+      <img src="https://upload.wikimedia.org/wikipedia/commons/b/b6/Catingueira.jpg" alt="???">
+    </div>
+  </div>
+
+  <footer>
+    made by love
+  </footer>
+</body>
+</html>
